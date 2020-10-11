@@ -23,12 +23,12 @@ class Bottles
             "#{number} bottles of beer on the wall, " +
             "#{number} bottles of beer.\n" +
             "Take one down and pass it around, " +
-            "#{number - 1} #{container(number)} of beer on the wall.\n"
+            "#{number - 1} #{container(number - 1)} of beer on the wall.\n"
         end
     end
 
     def container(number=:FIXME)
-        if number == 2
+        if number == 1
             "bottle"
         else
             "bottles"
